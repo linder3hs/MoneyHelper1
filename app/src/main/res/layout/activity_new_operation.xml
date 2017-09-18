@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.linder.moneyhelper1.NewOperationActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/registrar"
+        android:layout_margin="12dp"
+        android:textColor="#000"
+        android:paddingTop="12dp"
+        android:textSize="20sp"/>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/newMonto"
+        android:layout_marginTop="22dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/monto"
+        android:layout_margin="12dp"
+        android:inputType="numberDecimal"/>
+    </android.support.design.widget.TextInputLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:id="@+id/tipoe"
+            android:layout_margin="12dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/ingreso"
+                android:layout_marginTop="12dp"
+                android:padding="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ingreso"
+                android:layout_weight="1"/>
+
+            <RadioButton
+                android:layout_marginTop="12dp"
+                android:id="@+id/egreso"
+                android:padding="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/egreso"
+                android:layout_weight="1"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/tipodeentrada"
+        android:layout_margin="12dp"
+        android:entries="@array/tipoEntradita"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    </Spinner>
+
+    <Button
+        android:layout_gravity="end"
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
+        android:id="@+id/registar"
+        android:onClick="newRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_button"
+        android:text="@string/registrarr"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+</LinearLayout>
