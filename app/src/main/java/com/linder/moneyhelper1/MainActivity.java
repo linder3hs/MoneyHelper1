@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
 
         List<Operation> operations = operationRepository.getOperations();
         for (Operation operation : operations) {
-
+            //comentario
             tipoEn = operation.getTipoE();
             tiposSpi = operation.getTarjett();
             montop = operation.getMonto();
