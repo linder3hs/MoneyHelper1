@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".NewOperationActivity" />
-        <activity android:name=".GraficaActivity"></activity>
+        <activity android:name=".GraficaActivity" />
+        <activity android:name=".Splash"></activity>
     </application>
 
 </manifest>

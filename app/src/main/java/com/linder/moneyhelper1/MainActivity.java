@@ -109,13 +109,25 @@ public class MainActivity extends AppCompatActivity {
                 totalProgressE = totalProgressE + montop;
                 switch (tiposSpi){
                     case "Tarjeta de credito":
-                        montoTarjeta=montoTarjeta-montop;
+                        if (montop > montoTarjeta){
+                            Toast.makeText(this, "Dato menor", Toast.LENGTH_SHORT).show();
+                        }else{
+                            montoTarjeta=montoTarjeta-montop;
+                        }
                         break;
                     case "Ahorro":
-                        montoAhorro=montoAhorro-montop;
+                        if (montop > montoAhorro){
+                            Toast.makeText(this, "Dato menor", Toast.LENGTH_SHORT).show();
+                        }else{
+                            montoAhorro=montoAhorro-montop;
+                        }
                         break;
                     case "Efectivo":
-                        montoEfectivo=montoEfectivo-montop;
+                        if (montop > montoEfectivo){
+                            Toast.makeText(this, "Dato menor", Toast.LENGTH_SHORT).show();
+                        }else{
+                            montoEfectivo=montoEfectivo-montop;
+                        }
                         break;
                 }
                 break;
