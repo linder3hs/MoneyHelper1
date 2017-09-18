@@ -36,17 +36,15 @@ public class NewOperationActivity extends AppCompatActivity {
     public void newRegister(View view) {
 
         String montos = newMonto.getText().toString();
-        int monimput = Integer.parseInt(montos);
         String tipes = ((RadioButton) findViewById(tipoE.getCheckedRadioButtonId())).getText().toString();
-
         String tipos = tipo.getSelectedItem().toString();
-
-        if (montos.isEmpty() || tipes.isEmpty() || tipos.isEmpty()) {
-            Toast.makeText(this, "Rellene los datos", Toast.LENGTH_SHORT).show();
+        if (montos.isEmpty()) {
+            Toast.makeText(this, "Rellene el monto", Toast.LENGTH_SHORT).show();
             return;
         }
+        Operation operation = new Operation(Double.parseDouble(montos), tipes, tipos);
 
-        Operation operation = new Operation(monimput, tipes, tipos);
+
         /*Toast.makeText(this, monimput, Toast.LENGTH_SHORT).show();
         Toast.makeText(this, tipes, Toast.LENGTH_SHORT).show();
         Toast.makeText(this, tipos, Toast.LENGTH_SHORT).show();*/

@@ -16,7 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".NewOperationActivity"></activity>
+        <activity android:name=".NewOperationActivity" />
+        <activity android:name=".GraficaActivity"></activity>
     </application>
 
 </manifest>

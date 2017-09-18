@@ -10,6 +10,7 @@
     <string name="ingreso">Ingreso</string>
     <string name="egreso">Egreso</string>
     <string name="registrarr">Registrar</string>
+    <string name="piechart">PIECHART</string>
 
     <string-array name="tipoEntradita">
         <item>Tarjeta de credito</item>

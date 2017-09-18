@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" -->
 <LinearLayout
     android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -105,6 +108,8 @@
             style="@android:style/Widget.ProgressBar.Horizontal" />
 
 
+
+
     </LinearLayout>
     <android.support.design.widget.FloatingActionButton
         android:layout_width="match_parent"
@@ -115,5 +120,18 @@
         android:layout_above="@+id/summary"
         android:src="@drawable/ic_exposure_plus"
         android:onClick="addItem"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/chart1"
+            android:backgroundTint="#3c3d3c"
+            android:background="#3c3d3d"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
 
 </LinearLayout>
+<!--/ScrollView-->
